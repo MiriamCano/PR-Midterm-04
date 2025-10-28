@@ -6,10 +6,10 @@
     }
         */
 
-        body {
+body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: forestgreen;
+    background-color: #ffecb3;
 }
     
 header, nav, section, footer{
@@ -18,15 +18,37 @@ header, nav, section, footer{
     
 }  
 header{
-    border-color: blueviolet;
-    background-color: blueviolet;
+    /*border-color: blueviolet;*/
+    background-color: #ffa000;
     width: 100%;
     height: 150px;
+    display: inline-block;
 } 
-nav{
-    display: flex;
-    margin-top: 10px;
+.logo{
+    margin-left: 20px;
+    align-content: center;
 }
+nav{
+    background-color: #009688;
+    display: flex;
+    margin-top: 0px;
+}
+boton_personalizado {
+    background-color: blue; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 50px; /* Relleno interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+    margin-top: 5px;
+    }
+
+    /* Estilo al pasar el cursor */
+boton_personalizado:hover {
+    background-color: chartreuse;
+    color: black;
+}
+
 section{
     box-sizing: border-box;
     width: 100%;
@@ -38,10 +60,7 @@ section:last-of-type{
     margin-right: 0%;
 }
 
-/*section{
-    margin-top: 0.625em;
-    margin-bottom: 0.625ems;
-}*/
+/*Estilo para la columna*/
 .rectangulo {
     width: 25%;
     height: 50px;
@@ -49,22 +68,25 @@ section:last-of-type{
     background-color: yellow;
     display:inline-block;
     text-align: center;
+    
 }
 .contenedor{
     display: flex;
     column-gap: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .columna{
     flex: 1;
-    height: 850px;
+    height: 600px;
     background-color:blue;
 }
 .footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 60px;
-    background-color: red;
+    height: 100px;
+    background-color: #ffc107;
+    display: inline-block;
 }
-
-
